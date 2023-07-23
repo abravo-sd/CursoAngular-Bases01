@@ -16,5 +16,9 @@
 
 </dl>
 
-<button (click) = 'cambiarNombre();'>Cambiar Heroe</button>
-<button (click) = 'cambiarEdad();'>Cambiar Edad</button>
+<button
+*ngIf="nombre  !== 'Spiderman'"
+(click) = 'cambiarNombre();'>Cambiar Heroe</button>
+<button
+*ngIf="edad != 45"
+(click) = 'cambiarEdad();'>Cambiar Edad</button>
